@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 public class Customer : MonoBehaviour
-{
+{   
     private PlayerClerk.PlayerClerkTask currentTask = null;
 
     public PlayerClerk.PlayerClerkTask CurrentTask
@@ -16,7 +16,7 @@ public class Customer : MonoBehaviour
 
     private void Awake()
     {
-        Invoke(nameof(CancelService), 5f);
+        Invoke(nameof(CancelService), 5f);        
     }
 
     private void OnCollisionEnter(Collision other)
